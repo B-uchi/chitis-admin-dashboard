@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <title>Chitis Dashboard</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- LEFT NAV -->
+      <aside data-view="hidden" id="left">
+        <div class="brand">
+          <span id="title">CHITIS Store</span>
+          <span class="material-icons" id="menu-close">close</span>
+        </div>
+        <div class="left-body">
+          <div class="menu-collection">
+            <div class="menu-item">
+              <span class="material-icons">dashboard</span>
+              <p>Dashboard</p>
+            </div>
+            <div class="menu-item">
+              <span class="material-icons"> people </span>
+              <p>Customers</p>
+            </div>
+            <div class="menu-item">
+              <span class="material-icons"> format_list_bulleted </span>
+              <p>Orders</p>
+            </div>
+            <div class="menu-item">
+              <span class="material-icons"> leaderboard </span>
+              <p>Analytics</p>
+            </div>
+            <div class="menu-item">
+              <span class="material-icons"> mail_outline </span>
+              <p>Messages</p>
+            </div>
+            <div class="menu-item">
+              <span class="material-icons"> inventory </span>
+              <p>Products</p>
+            </div>
+            <div class="menu-item">
+              <span class="material-icons"> error_outline </span>
+              <p>Reports</p>
+            </div>
+            <div class="menu-item">
+              <span class="material-icons"> settings </span>
+              <p>Settings</p>
+            </div>
+            <div class="menu-item">
+              <span class="material-icons"> add </span>
+              <p>Add Product</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <span class="material-icons"> logout </span>
+            <p>Logout</p>
+          </div>
+        </div>
+      </aside>
+      <!-- END OF LEFT NAV -->
+
+      <!-- MAIN BODY -->
+      <main>
+        <div class="menu-btn-container" id="menu-toggle">
+          <span class="material-icons"> arrow_forward</span>
+        </div>
+        <div class="top">
+          <h1>DASHBOARD</h1>
+          <input type="date" />
+        </div>
+        <div class="middle">
+          <div class="metric" id="sales">
+            <div class="metric-top">
+              <div class="icon">
+                <span class="material-icons"> attach_money </span>
+              </div>
+            </div>
+            <div class="metric-middle">
+              <div class="metric-middle-left">
+                <h3>Total Sales</h3>
+                <h2>N750,000</h2>
+              </div>
+              <div class="metric-middle-right">
+                <div class="progress">
+                  <svg>
+                    <circle cx="38" cy="38" r="36"></circle>
+                  </svg>
+                </div>
+                <p>73%</p>
+              </div>
+            </div>
+            <div class="metric-bottom">Last 24 hours</div>
+          </div>
+
+          <div class="metric" id="expenses">
+            <div class="metric-top">
+              <div class="icon">
+                <span class="material-icons"> equalizer </span>
+              </div>
+            </div>
+            <div class="metric-middle">
+              <div class="metric-middle-left">
+                <h3>Total Expenses</h3>
+                <h2>N190,000</h2>
+              </div>
+              <div class="metric-middle-right">
+                <div class="progress">
+                  <svg>
+                    <circle cx="38" cy="38" r="36"></circle>
+                  </svg>
+                </div>
+                <p>49%</p>
+              </div>
+            </div>
+            <div class="metric-bottom">Last 24 hours</div>
+          </div>
+
+          <div class="metric" id="profit">
+            <div class="metric-top">
+              <div class="icon">
+                <span class="material-icons"> trending_up </span>
+              </div>
+            </div>
+            <div class="metric-middle">
+              <div class="metric-middle-left">
+                <h3>Total Profit</h3>
+                <h2>N560,000</h2>
+              </div>
+              <div class="metric-middle-right">
+                <div class="progress">
+                  <svg>
+                    <circle cx="38" cy="38" r="36"></circle>
+                  </svg>
+                </div>
+                <p>80%</p>
+              </div>
+            </div>
+            <div class="metric-bottom">Last 24 hours</div>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="recent-orders">
+            <h2>Recent Orders</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Product Name</th>
+                  <th>Product Number</th>
+                  <th>Payment</th>
+                  <th>Status</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody id="order-body"></tbody>
+            </table>
+
+            <a href="#">Show All</a>
+          </div>
+        </div>
+      </main>
+      <!-- END OF MAIN BODY -->
+
+      <!-- RIGHT HAND SIDE -->
+      <aside id="right">
+        <div class="right-top">
+          <span class="material-icons" id="hamburger"> menu </span>
+
+          <div class="toggle-theme">
+            <span class="material-icons active" id="light-mode">
+              light_mode
+            </span>
+            <span class="material-icons" id="dark-mode"> dark_mode </span>
+          </div>
+          <div class="user-stuff">
+            <div class="user-bio">
+              <p>Hey, <strong>Romeo</strong></p>
+              <small>Admin</small>
+            </div>
+            <img src="./assets/profile-1.jpg" alt="" id="admin-pic" />
+          </div>
+        </div>
+        <div class="right-middle">
+          <h2>Recent Updates</h2>
+          <div class="update-container">
+            <div class="update">
+              <img
+                src="./assets/profile-2.jpg"
+                alt=""
+                class="update-profile-pic"
+              />
+              <div class="update-text">
+                <p>
+                  <strong>John Cena</strong> recieved his order of 'Plate of
+                  Spaghetti'
+                </p>
+                <small>1h 30m ago.</small>
+              </div>
+            </div>
+            <div class="update">
+              <img
+                src="./assets/profile-3.jpg"
+                alt=""
+                class="update-profile-pic"
+              />
+              <div class="update-text">
+                <p>
+                  <strong>Chioma</strong> recieved her order of 'BeefPie
+                  Shawarma'
+                </p>
+                <small>2h ago.</small>
+              </div>
+            </div>
+            <div class="update">
+              <img
+                src="./assets/profile-4.jpg"
+                alt=""
+                class="update-profile-pic"
+              />
+              <div class="update-text">
+                <p><strong>Mmeso</strong> recieved her order of 'Akamu'.</p>
+                <small>3h 30m ago.</small>
+              </div>
+            </div>
+            <a href="#">Show more</a>
+          </div>
+        </div>
+        <div class="right-bottom">
+          <h2>Sales Analytics</h2>
+          <div class="analytics-container">
+            <div class="analytics">
+              <div class="left-grp">
+                <span class="material-icons"> shopping_cart </span>
+                <div class="analytics-text">
+                  <p><strong>ONLNE ORDERS</strong></p>
+                  <small>Last 24 hours</small>
+                </div>
+              </div>
+              <div class="analytic-metric">
+                <p id="decrease">-12%</p>
+                <strong>7,340</strong>
+              </div>
+            </div>
+            <div class="analytics">
+              <div class="left-grp">
+                <span class="material-icons" id="basket">
+                  shopping_basket
+                </span>
+                <div class="analytics-text">
+                  <p><strong>OFFLNE ORDERS</strong></p>
+                  <small>Last 24 hours</small>
+                </div>
+              </div>
+              <div class="analytic-metric">
+                <p id="increase">+49%</p>
+                <strong>1,250</strong>
+              </div>
+            </div>
+            <div class="analytics">
+              <div class="left-grp">
+                <span class="material-icons" id="new-customer"> person </span>
+                <div class="analytics-text">
+                  <p><strong>NEW CUSTOMERS</strong></p>
+                  <small>Last 24 hours</small>
+                </div>
+              </div>
+              <div class="analytic-metric">
+                <p id="increase">+39%</p>
+                <strong>9,466</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
