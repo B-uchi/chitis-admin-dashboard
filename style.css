@@ -7,6 +7,12 @@ body {
   display: flex;
   color: var(--color-info-light);
   overflow-y: hidden;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 :root {
   --color-primary: #9370db;
