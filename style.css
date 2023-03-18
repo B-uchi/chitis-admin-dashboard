@@ -70,9 +70,9 @@ aside {
   cursor: pointer;
 }
 [data-view="visible"] {
-  width: 280px;
+  min-width: 200px;
 
-  transition: 0.5s ease;
+  transition: all 300ms ease;
 }
 [data-view="hidden"] {
   transition: 0.5s ease;
@@ -263,6 +263,9 @@ a {
 }
 #order-body td {
   padding: 10px;
+}
+#right {
+  width: 100%;
 }
 .right-top {
   display: flex;
